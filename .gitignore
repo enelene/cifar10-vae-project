@@ -1,0 +1,30 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# --- WandB (Crucial!) ---
+# These folders get HUGE. Never push them.
+wandb/
+artifacts/
+
+# --- Jupyter & Colab ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Project Specific (Optional) ---
+# Ignore the data folder if you downloaded CIFAR-10 locally
+data/
+# Ignore your saved model checkpoints (too big for GitHub usually)
+*.pth
+*.pt
+experiments/
