@@ -31,7 +31,7 @@ The codebase is organized as follows:
 └── README.md                 # Project documentation
 ```
 
-# Best Experiment: The DFC-ResNetOur 
+# Best Experiment: The DFC-ResNet
 
 highest-performing model combined the structural depth of ResNet with the texture-awareness of Deep Feature Consistency (Perceptual Loss).Run ID: ResNet_DFC_Run-beta=0.1-epoch=50Configuration:Architecture: ResNet-VAE (Deep Residual Networks)Loss: $\beta=0.1$ (Prioritizing sharpness over latent smoothness) + $\alpha=0.5$ (VGG Perceptual Loss)Epochs: 50Result: This configuration solved the "MSE Blur" problem standard VAEs face on CIFAR-10. By forcing the model to match VGG-19 features (edges, textures) rather than just pixels, and relaxing the KL constraint ($\beta=0.1$), we achieved significantly sharper reconstructions with visible animal features (ears, legs) and distinct backgrounds.
 
