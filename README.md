@@ -4,6 +4,8 @@ This repository contains a comprehensive comparative study of generative models 
 
 **Constraint:** All models are **unconditional**. Class labels were explicitly discarded during training to force the models to learn the marginal distribution $p(x)$ purely from pixel data.
 
+**Wandb Report:** https://wandb.ai/egabe21-free-university-of-tbilisi-/cifar10-vae-final/reports/Untitled-Report--VmlldzoxNTgwODk4Mw
+
 ## 🚀 Key Features
 * **From-Scratch Implementations:** No high-level wrappers. All architectures, loss functions (ELBO, Perceptual Loss), and sampling loops are implemented in pure PyTorch.
 * **Advanced Architectures:**
